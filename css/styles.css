@@ -130,12 +130,13 @@ body {
   position: relative;
 
   color: var(--title-text-color);
+
+  transition: color 250ms var(--cubic);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--cubic);
 }
 
 .nav-link.current {
@@ -174,12 +175,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+
+  transition: color 250ms var(--cubic);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--cubic);
 }
 
 .contacts-icon {
@@ -395,6 +397,8 @@ body {
   color: var(--social-link-color);
 
   border-radius: 50%;
+
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
 .social-icon {
@@ -406,7 +410,6 @@ body {
 .social-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
 /* Clients */
@@ -437,13 +440,14 @@ body {
 
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
+
+  transition: color 250ms var(--cubic), border 250ms var(--cubic);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transition: color 250ms var(--cubic), border 250ms var(--cubic);
 }
 
 .clients-icon {
@@ -482,22 +486,24 @@ body {
 
 .location {
   color: var(--primary-white-color);
+
+  transition: color 250ms var(--cubic);
 }
 
 .location:hover,
 .location:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--cubic);
 }
 
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms var(--cubic);
 }
 
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--cubic);
 }
 
 .footer-text {
@@ -534,6 +540,8 @@ body {
   background: rgba(255, 255, 255, 0.1);
 
   border-radius: 50%;
+
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
 .footer-social-icon {
@@ -545,7 +553,6 @@ body {
 .footer-social-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
 /* Portfolio page */
@@ -584,6 +591,8 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .filter-btn:hover,
@@ -592,8 +601,6 @@ body {
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
-    box-shadow 250ms var(--cubic);
 }
 
 /* Portfolio */
@@ -604,11 +611,14 @@ body {
   gap: 30px;
 }
 
+.portfolio-link {
+  transition: box-shadow 250ms var(--cubic);
+}
+
 .portfolio-link:hover {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms var(--cubic);
 }
 
 .portfolio-overlay {
